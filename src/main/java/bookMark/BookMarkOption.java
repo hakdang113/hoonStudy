@@ -85,7 +85,7 @@ public class BookMarkOption {
 	
 	// 북마크 그룹 추가 함수
 	public int addBookMarkGroup(String bookmarkName, int registerNum) {
-		String sql = " insert into bookmarkgroup values (?, ?, ?, ? ,? ,?) ";
+		String sql = " insert into bookmarkgroup values (?, ?, ?, ? ,?) ";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, getNext());
@@ -93,7 +93,6 @@ public class BookMarkOption {
 			pstmt.setInt(3, registerNum);
 			pstmt.setString(4, getDate());
 			pstmt.setString(5, getDate());
-			pstmt.setInt(6, 1);
 
 			return pstmt.executeUpdate();
 
