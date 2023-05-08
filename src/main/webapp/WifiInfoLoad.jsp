@@ -28,7 +28,7 @@
 	
 	Long totalCnt = 12345678910L;
 	
-	for (int j=1; j<=100; j++) {	
+	for (int j=1; j<=23081; j++) {	
 	
 	StringBuilder urlBuilder = new StringBuilder("http://openapi.seoul.go.kr:8088"); /* URL */
 	urlBuilder.append(
